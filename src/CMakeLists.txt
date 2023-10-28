@@ -1,0 +1,17 @@
+find_package(SFML 2.5 REQUIRED COMPONENTS graphics audio network)
+link_libraries(sfml-graphics sfml-audio sfml-network ImGui-SFML)
+
+add_subdirectory(utils)
+link_libraries(utils)
+
+add_subdirectory(engine)
+add_subdirectory(effects)
+add_subdirectory(imgui)
+add_subdirectory(musicplayer)
+add_subdirectory(particleSystem)
+add_subdirectory(piano)
+add_subdirectory(sprite)
+add_subdirectory(tilemap)
+add_subdirectory(basicSimulator)
+add_subdirectory(advancedSimulator)
+add_subdirectory(sticks)
